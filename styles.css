@@ -1,0 +1,62 @@
+*{
+    padding:0;margin:0;box-sizing: border-box;
+}
+
+#game{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    background-color: black;
+    color:white;
+}
+
+
+#gameArea{
+    width:1200px ;
+    height:600px;
+    /* background-size: cover;
+    background-position: center; */
+    background: url('gameback.png');
+    border:5px solid rgb(10, 10, 10);
+}
+
+#jumpBox{
+    width:70px;
+    height:80px;
+    background-image: linear-gradient(red,green);
+    position:relative;
+    top:510px;
+    left:300px;
+    /* box-shadow: 5px 1px 4px rgb(78, 76, 76); */
+}
+
+.jumpAnimate{
+    animation:jumpbox 500ms infinite linear;
+}
+
+@keyframes jumpbox{
+    0%{top:510px}
+    30%{top:360px}
+    50%{top:310px}
+    70%{top:360px}
+    100%{top:510px}
+}
+
+#runningBox{
+    width:40px;
+    height:40px;
+    background: url('download.jpg');
+    background-color: rgb(88, 17, 86);
+    position: relative;
+    top:470px;
+    left:300px;
+    animation:runbox 2s infinite linear;
+}
+
+
+@keyframes runbox{
+    0%{left:90%}
+    100%{left:0%}
+}
